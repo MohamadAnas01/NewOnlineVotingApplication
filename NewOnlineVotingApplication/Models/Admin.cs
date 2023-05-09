@@ -7,7 +7,7 @@ namespace NewOnlineVotingApplication.Models
     public class Admin
     {
         [Required]
-        //this a model of bala.
+        
         public string? UserName { get; set; }
         [Required]
         [DataType(DataType.Password)]
