@@ -1,0 +1,17 @@
+﻿<h1>Admin</h1>
+<hr />
+<style>
+    button {
+        float: left;
+        margin-right: 30px;
+    }
+
+</style>
+<button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "UserRegistrations")'">User Details</button>
+
+<button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "VoteResults")'">Voter Details</button>
+
+<button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("DisplayVoteResults", "VoteResults")'">Vote Results</button>
+<form method="post" asp-action="Logout" asp-controller="Admin">
+<button type="submit" class="btn btn-primary" >Logout</button>
+</form>

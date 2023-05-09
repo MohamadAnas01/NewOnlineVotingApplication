@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote Poll</title>
+    <style>
+        /* CSS code goes here */
+        .image-container {
+            width: 25%;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            margin:30px;
+            border: 1px solid black;
+        }
+
+            .image-container img {
+                height: 300px;
+                width: 350px;
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+
+        .vote-button {
+            display: block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .vote-button:hover {
+                background-color: #3e8e41;
+            }
+
+        .vote-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>POLL YOUR VOTES</h1>
+    <hr />
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Dravida_Munnetra_Kazhagam_logo.png" alt="DMK">
+        <div class="vote-button-container">
+        <button class="vote-button" value="DMK" onclick="location.href='@Url.Action("Vote", "UserRegistrations", new { value = "DMK" })'">Vote</button>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src=" https://upload.wikimedia.org/wikipedia/en/a/a4/Official_logo_of_the_All_India_Anna_Dravida_Munnetra_Kazhagam.png" alt="ADMK">
+        <div class="vote-button-container">
+        <button class="vote-button" value="ADMK" onclick="location.href='@Url.Action("Vote", "UserRegistrations", new { value = "ADMK" })'">Vote</button>
+        </div>
+    </div>
+    <div class="image-container">
+       
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Bharatiya_Janata_Party_logo.svg/1200px-Bharatiya_Janata_Party_logo.svg.png
+" alt="BJP">
+        <div class="vote-button-container">
+        <button class="vote-button" value="BJP"  onclick="location.href='@Url.Action("Vote", "UserRegistrations", new { value = "BJP" })'">Vote</button>
+        </div>
+    </div>
+</body>
+</html>

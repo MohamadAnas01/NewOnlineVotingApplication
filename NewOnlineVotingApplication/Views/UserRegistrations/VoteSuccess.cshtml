@@ -1,0 +1,41 @@
+﻿<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: #333;
+        margin-top: 50px;
+    }
+
+  
+    .logout-button {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+</style>
+
+<h2>Your have been voted Successfully!</h2>
+<form method="post" asp-action="Logout" asp-controller="UserRegistrations">
+<button type="submit" class="btn btn-primary" >Logout</button>
+</form>
